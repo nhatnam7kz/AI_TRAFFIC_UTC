@@ -1,0 +1,10 @@
+# Chặn tuyệt đối thư mục dataset (ảnh train/test/valid)
+python_ai/data_set/
+
+# Chặn các thư mục kết quả train tự sinh của YOLO
+python_ai/runs/
+runs/
+
+# Chặn bộ nhớ đệm hệ thống
+__pycache__/
+.vscode/
