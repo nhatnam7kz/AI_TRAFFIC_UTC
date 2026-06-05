@@ -1,0 +1,3 @@
+# Tọa độ xuất phát bừa (Latitude, Longitude) và Tốc độ giả lập (km/h)
+# Định dạng: lat,lon,speed
+21.025944,105.801642,40.0

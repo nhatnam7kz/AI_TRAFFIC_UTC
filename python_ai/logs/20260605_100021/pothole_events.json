@@ -1,0 +1,12 @@
+[
+  {
+    "lat": 21.02875,
+    "lng": 105.802392,
+    "type": "pothole",
+    "confidence": 0.271,
+    "timestamp": "2026-06-05T03:01:04Z",
+    "device_id": "cam_001",
+    "speed_kmh": 0.0,
+    "frame": 1832
+  }
+]

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bản đồ ổ gà — TEST_SIM_20260604_233912</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        #map { height: 100vh; }
+        #info {
+            position: absolute; top: 10px; left: 50px;
+            z-index: 1000; background: white;
+            padding: 10px 16px; border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div id="info">
+    🕐 2026-06-04 23:39:12 → 2026-06-04 23:39:48 &nbsp;|&nbsp;
+    📍 Tổng ổ gà: <b>35</b> &nbsp;|&nbsp;
+    🟢 Conf≥0.6 &nbsp; 🟠 0.4–0.6 &nbsp; 🔴 &lt;0.4
+</div>
+<div id="map"></div>
+<script>
+    var map = L.map('map').setView([21.027801514285716, 105.80164199999993], 16);
+    L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+        attribution: '© Google Maps'
+    }).addTo(map);
+    
+        L.circleMarker([21.025947, 105.801642], {
+            color: 'orange', fillColor: 'orange',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:12<br>" +
+            "📍 21.025947, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.586"
+        );
+
+        L.circleMarker([21.026172, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:15<br>" +
+            "📍 21.026172, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.682"
+        );
+
+        L.circleMarker([21.026274, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:16<br>" +
+            "📍 21.026274, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.671"
+        );
+
+        L.circleMarker([21.026377, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:17<br>" +
+            "📍 21.026377, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.712"
+        );
+
+        L.circleMarker([21.026479, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:18<br>" +
+            "📍 21.026479, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.678"
+        );
+
+        L.circleMarker([21.02658, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:19<br>" +
+            "📍 21.02658, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.667"
+        );
+
+        L.circleMarker([21.02668, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:20<br>" +
+            "📍 21.02668, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.61"
+        );
+
+        L.circleMarker([21.026782, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:21<br>" +
+            "📍 21.026782, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.669"
+        );
+
+        L.circleMarker([21.026886, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:22<br>" +
+            "📍 21.026886, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.692"
+        );
+
+        L.circleMarker([21.026991, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:23<br>" +
+            "📍 21.026991, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.646"
+        );
+
+        L.circleMarker([21.027091, 105.801642], {
+            color: 'orange', fillColor: 'orange',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:24<br>" +
+            "📍 21.027091, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.492"
+        );
+
+        L.circleMarker([21.027192, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:25<br>" +
+            "📍 21.027192, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.705"
+        );
+
+        L.circleMarker([21.027293, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:26<br>" +
+            "📍 21.027293, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.638"
+        );
+
+        L.circleMarker([21.027394, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:27<br>" +
+            "📍 21.027394, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.689"
+        );
+
+        L.circleMarker([21.027495, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:28<br>" +
+            "📍 21.027495, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.716"
+        );
+
+        L.circleMarker([21.027598, 105.801642], {
+            color: 'orange', fillColor: 'orange',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:29<br>" +
+            "📍 21.027598, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.473"
+        );
+
+        L.circleMarker([21.027702, 105.801642], {
+            color: 'orange', fillColor: 'orange',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:30<br>" +
+            "📍 21.027702, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.534"
+        );
+
+        L.circleMarker([21.027804, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:31<br>" +
+            "📍 21.027804, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.699"
+        );
+
+        L.circleMarker([21.027905, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:32<br>" +
+            "📍 21.027905, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.767"
+        );
+
+        L.circleMarker([21.028009, 105.801642], {
+            color: 'red', fillColor: 'red',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:33<br>" +
+            "📍 21.028009, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.252"
+        );
+
+        L.circleMarker([21.028111, 105.801642], {
+            color: 'red', fillColor: 'red',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:34<br>" +
+            "📍 21.028111, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.364"
+        );
+
+        L.circleMarker([21.028213, 105.801642], {
+            color: 'orange', fillColor: 'orange',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:35<br>" +
+            "📍 21.028213, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.42"
+        );
+
+        L.circleMarker([21.028313, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:36<br>" +
+            "📍 21.028313, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.662"
+        );
+
+        L.circleMarker([21.028415, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:37<br>" +
+            "📍 21.028415, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.69"
+        );
+
+        L.circleMarker([21.028517, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:38<br>" +
+            "📍 21.028517, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.698"
+        );
+
+        L.circleMarker([21.028619, 105.801642], {
+            color: 'orange', fillColor: 'orange',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:39<br>" +
+            "📍 21.028619, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.552"
+        );
+
+        L.circleMarker([21.02872, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:40<br>" +
+            "📍 21.02872, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.677"
+        );
+
+        L.circleMarker([21.028824, 105.801642], {
+            color: 'orange', fillColor: 'orange',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:41<br>" +
+            "📍 21.028824, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.52"
+        );
+
+        L.circleMarker([21.028926, 105.801642], {
+            color: 'red', fillColor: 'red',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:42<br>" +
+            "📍 21.028926, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.34"
+        );
+
+        L.circleMarker([21.029036, 105.801642], {
+            color: 'orange', fillColor: 'orange',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:43<br>" +
+            "📍 21.029036, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.519"
+        );
+
+        L.circleMarker([21.029137, 105.801642], {
+            color: 'orange', fillColor: 'orange',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:44<br>" +
+            "📍 21.029137, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.421"
+        );
+
+        L.circleMarker([21.02924, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:45<br>" +
+            "📍 21.02924, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.759"
+        );
+
+        L.circleMarker([21.029343, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:46<br>" +
+            "📍 21.029343, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.605"
+        );
+
+        L.circleMarker([21.029443, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:47<br>" +
+            "📍 21.029443, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.616"
+        );
+
+        L.circleMarker([21.029545, 105.801642], {
+            color: 'green', fillColor: 'green',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>⚠ Ổ gà</b><br>" +
+            "🕐 2026-06-04 23:39:48<br>" +
+            "📍 21.029545, 105.801642<br>" +
+            "🚗 40.0 km/h<br>" +
+            "🎯 Conf: 0.648"
+        );
+
+</script>
+</body>
+</html>

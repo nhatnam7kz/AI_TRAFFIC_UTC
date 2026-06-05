@@ -8,3 +8,6 @@ runs/
 # Chặn bộ nhớ đệm hệ thống
 __pycache__/
 .vscode/
+
+logs/*
+!logs/.gitkeep

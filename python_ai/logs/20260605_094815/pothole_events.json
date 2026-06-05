@@ -1,0 +1,32 @@
+[
+  {
+    "lat": 21.027763,
+    "lng": 105.83416,
+    "type": "pothole",
+    "confidence": 0.559,
+    "timestamp": "2026-06-05T02:49:06Z",
+    "device_id": "cam_001",
+    "speed_kmh": 0.0,
+    "frame": 1738
+  },
+  {
+    "lat": 21.02888,
+    "lng": 105.802436,
+    "type": "pothole",
+    "confidence": 0.377,
+    "timestamp": "2026-06-05T02:49:09Z",
+    "device_id": "cam_001",
+    "speed_kmh": 0.0,
+    "frame": 1854
+  },
+  {
+    "lat": 21.028848,
+    "lng": 105.802425,
+    "type": "pothole",
+    "confidence": 0.443,
+    "timestamp": "2026-06-05T02:49:54Z",
+    "device_id": "cam_001",
+    "speed_kmh": 0.0,
+    "frame": 3840
+  }
+]

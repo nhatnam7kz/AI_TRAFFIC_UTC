@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Bản đồ ổ gà — 20260605_094815</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        #map { height: 100vh; }
+        #info {
+            position: absolute; top: 10px; left: 50px;
+            z-index: 1000; background: white;
+            padding: 10px 16px; border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div id="info">
+    &#128336; 2026-06-05 09:49:06 → 2026-06-05 09:49:54 &nbsp;|&nbsp;
+    &#128205; T&#7893;ng &#7893; g&#224;: <b>3</b> &nbsp;|&nbsp;
+    &#127abe; Conf&#8805;0.6 &nbsp; &#127811; 0.4&#8211;0.6 &nbsp; &#128308; &lt;0.4
+</div>
+<div id="map"></div>
+<script>
+    var map = L.map('map').setView([21.028497, 105.81300700000001], 16);
+    L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+        attribution: '&copy; Google Maps'
+    }).addTo(map);
+    
+        L.circleMarker([21.027763, 105.83416], {
+            color: 'orange', fillColor: 'orange',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>&#9888; &#7893; g&#224;</b><br>" +
+            "&#128336; 2026-06-05 09:49:06<br>" +
+            "&#128205; 21.027763, 105.83416<br>" +
+            "&#128663; 0.0 km/h<br>" +
+            "&#127919; Conf: 0.559"
+        );
+        
+        L.circleMarker([21.02888, 105.802436], {
+            color: 'red', fillColor: 'red',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>&#9888; &#7893; g&#224;</b><br>" +
+            "&#128336; 2026-06-05 09:49:09<br>" +
+            "&#128205; 21.02888, 105.802436<br>" +
+            "&#128663; 0.0 km/h<br>" +
+            "&#127919; Conf: 0.377"
+        );
+        
+        L.circleMarker([21.028848, 105.802425], {
+            color: 'orange', fillColor: 'orange',
+            fillOpacity: 0.8, radius: 8
+        }).addTo(map).bindPopup(
+            "<b>&#9888; &#7893; g&#224;</b><br>" +
+            "&#128336; 2026-06-05 09:49:54<br>" +
+            "&#128205; 21.028848, 105.802425<br>" +
+            "&#128663; 0.0 km/h<br>" +
+            "&#127919; Conf: 0.443"
+        );
+        
+</script>
+</body>
+</html>
