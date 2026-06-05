@@ -11,3 +11,13 @@ __pycache__/
 
 logs/*
 !logs/.gitkeep
+
+# Chặn hoàn toàn thư mục logs nằm bên trong python_ai
+python_ai/logs/*
+
+# Ngoại trừ file .gitkeep để giữ lại vỏ thư mục rỗng khi push lên GitHub
+!python_ai/logs/.gitkeep
+
+# (Tùy chọn) Chặn luôn cả thư mục sources chứa video nặng để tránh push nhầm
+python_ai/sources/*
+!python_ai/sources/.gitkeep

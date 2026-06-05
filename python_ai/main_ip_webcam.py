@@ -29,7 +29,7 @@ from ultralytics import YOLO
 # ================================================================
 # CONFIG
 # ================================================================
-PHONE_IP        = "10.50.91.154"
+PHONE_IP        = "192.168.1.78"
 GPS_PORT        = 8081
 CAM_PORT        = 8080
 YOLO_WEIGHTS    = "python_ai/weights/best.pt"
