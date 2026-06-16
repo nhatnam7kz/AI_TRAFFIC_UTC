@@ -7,22 +7,26 @@ import cv2
 import numpy as np
 from ultralytics import YOLO
 
-# Import module xử lý dữ liệu (Đã loại bỏ map_generator)
+# Tự động tìm đường dẫn tuyệt đối của thư mục chứa file code này
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Import module xử lý dữ liệu
 from modules.gps_processor import load_gps_from_gpx, extract_gps_from_video, interpolate_gps, haversine
 
 # ================================================================
 # 1. CẤU HÌNH HỆ THỐNG
 # ================================================================
-YOLO_WEIGHTS       = "weights/best.pt"
+YOLO_WEIGHTS       = os.path.join(BASE_DIR, "weights/best.pt")
 YOLO_CONF          = 0.25
 DEVICE_ID          = "cam_001"
-SOURCES_DIR        = "sources"
+SOURCES_DIR        = os.path.join(BASE_DIR, "sources")
+
 YOLO_IMGSZ         = 320
 MIN_LOG_DISTANCE_M = 3.0
 MIN_LOG_INTERVAL_S = 1.0
 SAVE_POTHOLE_FRAMES= True
 FRAME_SAVE_QUALITY = 85
-LOG_DIR_BASE       = "logs"
+LOG_DIR_BASE       = os.path.join(BASE_DIR, "logs")
 
 # Thêm tuỳ chọn bỏ qua khung hình (Frame Skip) giúp Edge-AI chạy mượt hơn
 PROCESS_EVERY_N_FRAMES = 2 
@@ -199,7 +203,7 @@ def process_video_smooth(model, video_path: str, gpx_path: str, video_name: str)
 def main():
     print("====================================================")
     print("🚗 Decentralized Edge-AI — Core Detection Mode")
-    print(f"📂 Quét thư mục: {os.path.abspath(SOURCES_DIR)}")
+    print(f"📂 Quét thư mục: {SOURCES_DIR}")
     print("====================================================\n")
 
     if not os.path.isdir(SOURCES_DIR):
