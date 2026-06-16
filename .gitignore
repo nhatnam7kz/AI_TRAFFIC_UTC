@@ -1,3 +1,6 @@
+# ==========================================
+# 1. CÁC THƯ MỤC DATA, RUNS VÀ CACHE
+# ==========================================
 # Chặn tuyệt đối thư mục dataset (ảnh train/test/valid)
 python_ai/data_set/
 
@@ -5,19 +8,35 @@ python_ai/data_set/
 python_ai/runs/
 runs/
 
-# Chặn bộ nhớ đệm hệ thống
+# Chặn bộ nhớ đệm hệ thống và cấu hình IDE
 __pycache__/
 .vscode/
 
+# ==========================================
+# 2. CÁC THƯ MỤC LOG & SOURCE (Giữ lại vỏ rỗng)
+# ==========================================
 logs/*
 !logs/.gitkeep
 
 # Chặn hoàn toàn thư mục logs nằm bên trong python_ai
 python_ai/logs/*
-
-# Ngoại trừ file .gitkeep để giữ lại vỏ thư mục rỗng khi push lên GitHub
 !python_ai/logs/.gitkeep
 
-# (Tùy chọn) Chặn luôn cả thư mục sources chứa video nặng để tránh push nhầm
+# Chặn luôn cả thư mục sources chứa video nặng để tránh push nhầm
 python_ai/sources/*
 !python_ai/sources/.gitkeep
+
+# ==========================================
+# 3. LỌC CÁC FILE SCRIPT AI TRONG 'python_ai'
+# ==========================================
+# Chặn tất cả các file python (.py) và video (.mp4) nằm vương vãi
+python_ai/*.py
+python_ai/*.mp4
+
+# CHỈ GIỮ LẠI ĐÚNG 3 FILE ĐƯỢC YÊU CẦU:
+!python_ai/main_ip_webcam.py
+!python_ai/process_AI.py
+!python_ai/process_video.py
+
+# (Ghi chú: Thư mục python_ai/modules vẫn sẽ được push lên bình thường 
+# vì nó không bị chặn bởi các quy tắc trên)

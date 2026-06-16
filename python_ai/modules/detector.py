@@ -11,7 +11,8 @@ def load_yolo_model(weights_path: str):
         print(f"❌ Không nạp được model: {e}")
         sys.exit(1)
 
-def run_batch_inference(model, frames: list, imgsz: int, conf: float) -> list:
-    if not frames: return []
-    results = model(frames, imgsz=imgsz, conf=conf, verbose=False, stream=False)
+def run_batch_inference(model, frames: list, imgsz: int, conf: float, half: bool = False) -> list:
+    if not frames:
+        return []
+    results = model(frames, imgsz=imgsz, conf=conf, half=half, verbose=False, stream=False)
     return list(results)
