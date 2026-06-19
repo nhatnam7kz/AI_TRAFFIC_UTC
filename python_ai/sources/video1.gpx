@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GEM_AI_Traffic_Grid_Test" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Lộ trình Test Edge-AI Nguyễn Chí Thanh</name>
+    <desc>Giả lập xe ô tô/xe máy di chuyển thẳng để test nhận diện sự cố hạ tầng</desc>
+  </metadata>
+  <trk>
+    <name>Nguyễn Chí Thanh Straight Run</name>
+    <trkseg>
+      <!-- Điểm 1: Ngã tư Liễu Giai - Nguyễn Chí Thanh (Gần Vincom) -->
+      <trkpt lat="21.026350" lon="105.809550">
+        <ele>15.0</ele>
+        <time>2026-06-19T15:30:00Z</time>
+        <desc>Bắt đầu luồng quét video camera hành trình</desc>
+      </trkpt>
+      
+      <!-- Điểm 2: Đoạn qua ĐH Luật Hà Nội -->
+      <trkpt lat="21.024220" lon="105.806210">
+        <ele>15.0</ele>
+        <time>2026-06-19T15:30:15Z</time>
+        <desc>Giả lập phát hiện ổ gà 1 - Đóng gói dữ liệu JSON</desc>
+      </trkpt>
+      
+      <!-- Điểm 3: Đối diện Học viện Hành chính Quốc gia -->
+      <trkpt lat="21.022150" lon="105.803020">
+        <ele>15.0</ele>
+        <time>2026-06-19T15:30:30Z</time>
+        <desc>Giả lập tín hiệu rung lắc từ cảm biến gia tốc xe máy</desc>
+      </trkpt>
+      
+      <!-- Điểm 4: Gần Ngã tư Huỳnh Thúc Kháng - Nguyễn Chí Thanh -->
+      <trkpt lat="21.020280" lon="105.800120">
+        <ele>15.0</ele>
+        <time>2026-06-19T15:30:45Z</time>
+        <desc>Khu vực đẩy dữ liệu đồng thuận lên Blockchain Cardano</desc>
+      </trkpt>
+      
+      <!-- Điểm 5: Cầu vượt Nguyễn Chí Thanh - Đường Láng -->
+      <trkpt lat="21.018350" lon="105.797150">
+        <ele>15.0</ele>
+        <time>2026-06-19T15:31:00Z</time>
+        <desc>Kết thúc đoạn test, bản đồ cập nhật chấm đỏ cảnh báo</desc>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

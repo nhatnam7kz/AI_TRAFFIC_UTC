@@ -23,8 +23,7 @@ python_ai/logs/*
 !python_ai/logs/.gitkeep
 
 # Chặn luôn cả thư mục sources chứa video nặng để tránh push nhầm
-python_ai/sources/*
-!python_ai/sources/.gitkeep
+
 
 # ==========================================
 # 3. LỌC CÁC FILE SCRIPT AI TRONG 'python_ai'
